@@ -1,0 +1,4 @@
+name: IntaveAdditions
+version: '${version}'
+main: me.chrommob.intaveadditions.IntaveAdditionsPlugin
+api-version: 1.8
