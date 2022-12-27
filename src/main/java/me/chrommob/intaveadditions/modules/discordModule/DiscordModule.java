@@ -35,7 +35,7 @@ public class DiscordModule implements Module {
         message.addEmbed(new WebhookMessage.EmbedObject()
                 .setTitle(configReader.prefix() + " Detection")
                 .setDescription(username)
-                .addField("Command", command, false)
+                .addField("Command", command.replaceAll("§.", ""), false)
                 .addField("Check", check, false)
                 .addField("Violation Level", String.valueOf(violationLevel), false)
                 .addField("Violation Details", violationDetails, false)
