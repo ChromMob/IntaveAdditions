@@ -34,6 +34,7 @@ public class DiscordModule implements Module {
     }
 
     public void readConfig() {
+        configReader = plugin.getConfigReader();
         ConfigurationSection section = plugin.getConfig().getConfigurationSection("discord");
         if (section == null) {
             plugin.getLogger().info("Discord module failed to read config.");
