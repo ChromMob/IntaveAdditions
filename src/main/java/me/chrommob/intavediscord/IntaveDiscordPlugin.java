@@ -1,7 +1,6 @@
 package me.chrommob.intavediscord;
 
 import me.chrommob.intavediscord.event.EventDispatcher;
-import me.chrommob.intavediscord.module.ModuleLoader;
 import me.chrommob.intavediscord.module.Modules;
 import org.bukkit.plugin.java.JavaPlugin;
 
