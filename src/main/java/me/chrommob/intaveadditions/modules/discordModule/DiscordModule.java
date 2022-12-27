@@ -58,9 +58,10 @@ public class DiscordModule implements Module {
                 .setTitle(discordConfig.prefix() + " Detection")
                 .setDescription(username)
                 .addField("Command", command.replaceAll("§.", ""), false)
-                .addField("Check", check, false)
-                .addField("Violation Level", String.valueOf(violationLevel), false)
+                .addField("Check", check, true)
+                .addField("VL", String.valueOf(violationLevel), true)
                 .addField("Violation Details", violationDetails, false)
+                .setThumbnail("https://cravatar.eu/avatar/" + username + "/64.png")
                 .setColor(Color.RED));
         try {
             message.execute();
