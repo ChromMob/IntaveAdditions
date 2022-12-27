@@ -58,9 +58,9 @@ public class DiscordModule implements Module {
         message.addEmbed(new WebhookMessage.EmbedObject()
                 .setTitle(discordConfig.prefix() + " Detection")
                 .setDescription(username)
-                .addField("Command", command.replaceAll("§.", ""), false)
                 .addField("Check", check, true)
                 .addField("VL", String.valueOf(violationLevel), true)
+                .addField("Command", command.replaceAll("§.", ""), false)
                 .addField("Violation Details", violationDetails, false)
                 .setThumbnail("https://cravatar.eu/avatar/" + username + "/64.png")
                 .setColor(Color.RED));
