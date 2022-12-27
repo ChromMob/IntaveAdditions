@@ -1,0 +1,8 @@
+webhookUrl: "https://discordapp.com/api/webhooks/1234567890/abcdefghijklmnopqrstuvwxyz"
+# ^^^^ This is the webhook URL for the Discord channel you want to send messages to.
+username: "IntaveAdditions"
+# ^^^^ This is the username that will be displayed in the Discord channel.
+avatarUrl: "https://i.imgur.com/1234567890.png"
+# ^^^^ This is the avatar that will be displayed in the Discord channel.
+prefix: "[IntaveAdditions]"
+# ^^^^ This is the prefix that will be displayed in the Discord channel.
