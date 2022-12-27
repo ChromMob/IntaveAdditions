@@ -39,7 +39,6 @@ public class DiscordModule implements Module {
                 .addField("Check", check, false)
                 .addField("Violation Level", String.valueOf(violationLevel), false)
                 .addField("Violation Details", violationDetails, false)
-                .addField("Violation Level", String.valueOf(violationLevel), false)
                 .setColor(Color.RED));
         try {
             message.execute();
@@ -47,7 +46,6 @@ public class DiscordModule implements Module {
             plugin.getLogger().info("Failed to send webhook message. Probably due to rate limiting.");
         }
     }
-
     private WebhookMessage createTemplateMessage() {
         WebhookMessage message = new WebhookMessage(configReader.webhookUrl());
         message.setUsername(configReader.username());
