@@ -46,7 +46,7 @@ public class DiscordModule implements Module {
         } else {
             discordConfig = (DiscordConfig) configReader.getConfig(this);
         }
-        discordConfig.setWebhookUrl(section.getString("webhook"));
+        discordConfig.setWebhookUrl(section.getString("webhookUrl"));
         discordConfig.setUsername(section.getString("username"));
         discordConfig.setAvatarUrl(section.getString("avatarUrl"));
         discordConfig.setPrefix(section.getString("prefix"));
