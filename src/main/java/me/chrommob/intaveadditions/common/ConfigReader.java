@@ -1,37 +1,15 @@
 package me.chrommob.intaveadditions.common;
 
+
+import java.util.concurrent.ConcurrentHashMap;
+
 public class ConfigReader {
-    private String prefix;
-    private String username;
-    private String webhookUrl;
-    private String avatarUrl;
-
-    public void setWebhookUrl(String webhookUrl) {
-        this.webhookUrl = webhookUrl;
-    }
-    public void setUsername(String username) {
-        this.username = username;
-    }
-    public void setAvatarUrl(String avatarUrl) {
-        this.avatarUrl = avatarUrl;
-    }
-    public void setPrefix(String prefix) {
-        this.prefix = prefix;
+    private final ConcurrentHashMap<String, Object> config = new ConcurrentHashMap<>();
+    public void addConfig(Module key, Object value) {
+        config.put(key.getName(), value);
     }
 
-
-    public String webhookUrl() {
-        return webhookUrl;
-    }
-    public String username() {
-        return username;
-    }
-
-    public String avatarUrl() {
-        return avatarUrl;
-    }
-
-    public String prefix() {
-        return prefix;
+    public Object getConfig(Module key) {
+        return config.getOrDefault(key.getName(), null);
     }
 }

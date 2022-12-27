@@ -9,6 +9,7 @@ public class ModulesInitializer {
     }
 
     public void registerModule(Module module) {
+        module.readConfig();
         module.init();
         for (ListenerInterface listener : module.getListeners()) {
             plugin.getEventDispatcher().registerListeners(listener);

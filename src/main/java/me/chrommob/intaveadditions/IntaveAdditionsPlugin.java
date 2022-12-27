@@ -17,16 +17,8 @@ public final class IntaveAdditionsPlugin extends JavaPlugin {
         saveDefaultConfig();
         reloadConfig();
         configReader = new ConfigReader();
-        loadConfig();
         eventDispatcher = new EventDispatcher(this);
         initModules();
-    }
-
-    private void loadConfig() {
-        configReader.setWebhookUrl(getConfig().getString("webhookUrl"));
-        configReader.setUsername(getConfig().getString("username"));
-        configReader.setAvatarUrl(getConfig().getString("avatarUrl"));
-        configReader.setPrefix(getConfig().getString("prefix"));
     }
 
     private void initModules() {
