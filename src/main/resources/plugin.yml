@@ -1,5 +1,5 @@
 name: IntaveAdditions
 version: '${version}'
-main: me.chrommob.intaveadditions.IntaveAdditionsPlugin
+main: me.chrommob.intavediscord.IntaveDiscordPlugin
 depend:
   - Intave
