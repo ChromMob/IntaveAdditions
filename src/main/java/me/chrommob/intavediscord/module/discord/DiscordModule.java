@@ -45,13 +45,13 @@ public class DiscordModule implements Module {
     }
   }
 
-  public void sendWebhook(String username, String command, String check, double violationLevel, String violationDetails) {
+  public void sendWebhook(String username, String command, String check, String violationLevel, String violationDetails) {
     WebhookMessage message = createTemplateMessage();
     message.addEmbed(new WebhookMessage.EmbedObject()
       .setTitle(discordConfig.prefix() + " Detection")
       .setDescription(username)
       .addField("Check", check, true)
-      .addField("VL", String.valueOf(violationLevel), true)
+      .addField("VL", violationLevel, true)
       .addField("Command", command.replaceAll("§.", ""), false)
       .addField("Debug", violationDetails, false)
       .setThumbnail("https://cravatar.eu/avatar/" + username + "/64.png")
