@@ -45,6 +45,11 @@ public class DiscordModule implements Module {
     }
   }
 
+  @Override
+  public boolean isEnabled() {
+    return plugin.getConfig().getBoolean("discord.enabled");
+  }
+
   public void sendWebhook(String username, String command, String check, double violationLevel, String violationDetails) {
     WebhookMessage message = createTemplateMessage();
     message.addEmbed(new WebhookMessage.EmbedObject()

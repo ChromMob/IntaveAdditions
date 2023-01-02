@@ -1,4 +1,6 @@
 discord:
+  enabled: true
+  # ^^^^ Whether the module is enabled.
   webhookUrl: "https://discordapp.com/api/webhooks/1234567890/abcdefghijklmnopqrstuvwxyz"
   # ^^^^ This is the webhook URL for the Discord channel you want to send messages to.
   username: "IntaveAdditions"

@@ -18,6 +18,9 @@ public final class Modules {
   }
 
   private void load(Module module) {
+    if (!module.isEnabled()) {
+        return;
+    }
     module.readConfig();
     module.init();
     for (Subscriber listener : module.subscriptions()) {

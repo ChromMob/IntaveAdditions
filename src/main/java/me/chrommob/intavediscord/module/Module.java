@@ -7,6 +7,8 @@ import java.util.Set;
 public interface Module {
   void init();
 
+  boolean isEnabled();
+
   void readConfig();
 
   String name();
