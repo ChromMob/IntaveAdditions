@@ -1,9 +1,9 @@
-package me.chrommob.intavediscord.module.discord;
+package me.chrommob.intaveadditions.module.discord;
 
 import de.jpx3.intave.access.check.Check;
 import de.jpx3.intave.access.check.event.IntaveCommandExecutionEvent;
 import de.jpx3.intave.access.check.event.IntaveViolationEvent;
-import me.chrommob.intavediscord.event.Subscriber;
+import me.chrommob.intaveadditions.event.Subscriber;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

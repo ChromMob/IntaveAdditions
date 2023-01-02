@@ -1,4 +1,4 @@
-package me.chrommob.intavediscord.module.discord;
+package me.chrommob.intaveadditions.module.discord;
 
 public class DiscordConfig {
   private String webhookUrl;

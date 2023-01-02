@@ -1,6 +1,6 @@
 name: IntaveAdditions
 version: '${version}'
-main: me.chrommob.intavediscord.IntaveDiscordPlugin
+main: me.chrommob.intaveadditions.IntaveAdditionsPlugin
 softdepend:
   - Intave
   - IntaveBootstrap

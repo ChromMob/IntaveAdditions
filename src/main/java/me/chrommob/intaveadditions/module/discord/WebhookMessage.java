@@ -1,4 +1,4 @@
-package me.chrommob.intavediscord.module.discord;
+package me.chrommob.intaveadditions.module.discord;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.awt.*;

@@ -9,3 +9,8 @@ discord:
   # ^^^^ This is the avatar that will be displayed in the Discord channel.
   prefix: "[IntaveAdditions]"
   # ^^^^ This is the prefix that will be displayed in the Discord channel.
+falseFlags:
+  enabled: true
+    # ^^^^ Whether the module is enabled.
+  nonVanillaItems: true
+    # ^^^^ Whether to exempt when a player is flagged for non-vanilla enchantments.

@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "me.chrommob"
-version = "1.0-SNAPSHOT"
+version = "1.0.2"
 
 repositories {
   maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
@@ -24,4 +24,9 @@ dependencies {
   compileOnly("org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT")
   compileOnly("de.jpx3.intave.access:intave-access:14.4.2")
   implementation("org.bstats:bstats-bukkit:3.0.0")
+}
+
+tasks.shadowJar {
+  minimize()
+  relocate("org.bstats", "me.chrommob.bstats")
 }

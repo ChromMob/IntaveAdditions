@@ -1,13 +1,13 @@
-package me.chrommob.intavediscord;
+package me.chrommob.intaveadditions;
 
-import me.chrommob.intavediscord.event.EventDispatcher;
-import me.chrommob.intavediscord.module.Modules;
+import me.chrommob.intaveadditions.event.EventDispatcher;
+import me.chrommob.intaveadditions.module.Modules;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
 
-public final class IntaveDiscordPlugin extends JavaPlugin {
+public final class IntaveAdditionsPlugin extends JavaPlugin {
   private Modules modules;
   private EventDispatcher eventDispatcher;
 

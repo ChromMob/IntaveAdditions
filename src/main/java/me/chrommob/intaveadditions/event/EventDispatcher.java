@@ -1,14 +1,14 @@
-package me.chrommob.intavediscord.event;
+package me.chrommob.intaveadditions.event;
 
 import de.jpx3.intave.access.check.event.IntaveCommandExecutionEvent;
 import de.jpx3.intave.access.check.event.IntaveViolationEvent;
-import me.chrommob.intavediscord.IntaveDiscordPlugin;
+import me.chrommob.intaveadditions.IntaveAdditionsPlugin;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class EventDispatcher {
-  public EventDispatcher(IntaveDiscordPlugin plugin) {
+  public EventDispatcher(IntaveAdditionsPlugin plugin) {
     new ViolationListener(plugin);
   }
 

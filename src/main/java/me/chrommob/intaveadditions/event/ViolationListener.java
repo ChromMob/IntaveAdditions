@@ -1,15 +1,15 @@
-package me.chrommob.intavediscord.event;
+package me.chrommob.intaveadditions.event;
 
 import de.jpx3.intave.access.check.event.IntaveCommandExecutionEvent;
 import de.jpx3.intave.access.check.event.IntaveViolationEvent;
-import me.chrommob.intavediscord.IntaveDiscordPlugin;
+import me.chrommob.intaveadditions.IntaveAdditionsPlugin;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
 public class ViolationListener implements Listener {
-  private final IntaveDiscordPlugin plugin;
+  private final IntaveAdditionsPlugin plugin;
 
-  public ViolationListener(IntaveDiscordPlugin plugin) {
+  public ViolationListener(IntaveAdditionsPlugin plugin) {
     this.plugin = plugin;
     plugin.getServer().getPluginManager().registerEvents(this, plugin);
   }

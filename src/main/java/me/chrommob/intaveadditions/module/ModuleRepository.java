@@ -1,4 +1,4 @@
-package me.chrommob.intavediscord.module;
+package me.chrommob.intaveadditions.module;
 
 import java.util.HashMap;
 import java.util.Map;

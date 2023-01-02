@@ -1,6 +1,6 @@
-package me.chrommob.intavediscord.module;
+package me.chrommob.intaveadditions.module;
 
-import me.chrommob.intavediscord.event.Subscriber;
+import me.chrommob.intaveadditions.event.Subscriber;
 
 import java.util.Set;
 

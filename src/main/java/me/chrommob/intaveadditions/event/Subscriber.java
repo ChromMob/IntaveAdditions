@@ -1,4 +1,4 @@
-package me.chrommob.intavediscord.event;
+package me.chrommob.intaveadditions.event;
 
 import de.jpx3.intave.access.check.event.IntaveCommandExecutionEvent;
 import de.jpx3.intave.access.check.event.IntaveViolationEvent;

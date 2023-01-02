@@ -1,20 +1,22 @@
-package me.chrommob.intavediscord.module;
+package me.chrommob.intaveadditions.module;
 
-import me.chrommob.intavediscord.IntaveDiscordPlugin;
-import me.chrommob.intavediscord.event.Subscriber;
-import me.chrommob.intavediscord.module.discord.DiscordModule;
+import me.chrommob.intaveadditions.IntaveAdditionsPlugin;
+import me.chrommob.intaveadditions.event.Subscriber;
+import me.chrommob.intaveadditions.module.discord.DiscordModule;
+import me.chrommob.intaveadditions.module.falseFlags.FalseFlagModule;
 
 public final class Modules {
-  private final IntaveDiscordPlugin plugin;
+  private final IntaveAdditionsPlugin plugin;
   private final ModuleRepository repository;
 
-  public Modules(IntaveDiscordPlugin plugin) {
+  public Modules(IntaveAdditionsPlugin plugin) {
     this.plugin = plugin;
     this.repository = new ModuleRepository();
   }
 
   public void loadAll() {
     load(new DiscordModule(plugin));
+    load(new FalseFlagModule(plugin));
   }
 
   private void load(Module module) {

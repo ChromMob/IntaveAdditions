@@ -1,8 +1,8 @@
-package me.chrommob.intavediscord.module.discord;
+package me.chrommob.intaveadditions.module.discord;
 
-import me.chrommob.intavediscord.IntaveDiscordPlugin;
-import me.chrommob.intavediscord.event.Subscriber;
-import me.chrommob.intavediscord.module.Module;
+import me.chrommob.intaveadditions.IntaveAdditionsPlugin;
+import me.chrommob.intaveadditions.event.Subscriber;
+import me.chrommob.intaveadditions.module.Module;
 import org.bukkit.configuration.ConfigurationSection;
 
 import java.awt.*;
@@ -11,9 +11,9 @@ import java.util.Collections;
 import java.util.Set;
 
 public class DiscordModule implements Module {
-  private final IntaveDiscordPlugin plugin;
+  private final IntaveAdditionsPlugin plugin;
 
-  public DiscordModule(IntaveDiscordPlugin plugin) {
+  public DiscordModule(IntaveAdditionsPlugin plugin) {
     this.plugin = plugin;
   }
 
