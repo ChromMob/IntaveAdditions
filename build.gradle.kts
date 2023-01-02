@@ -23,4 +23,5 @@ dependencies {
   // Pick only one of these and read the comment in the repositories block.
   compileOnly("org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT")
   compileOnly("de.jpx3.intave.access:intave-access:14.4.2")
+  implementation("org.bstats:bstats-bukkit:3.0.0")
 }

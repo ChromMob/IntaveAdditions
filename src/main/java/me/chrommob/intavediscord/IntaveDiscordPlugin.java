@@ -2,6 +2,7 @@ package me.chrommob.intavediscord;
 
 import me.chrommob.intavediscord.event.EventDispatcher;
 import me.chrommob.intavediscord.module.Modules;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
@@ -13,6 +14,8 @@ public final class IntaveDiscordPlugin extends JavaPlugin {
   @Override
   public void onEnable() {
     Logger logger = getLogger();
+
+    new Metrics(this, 17267);
 
     // Plugin startup logic
     loadConfig();
