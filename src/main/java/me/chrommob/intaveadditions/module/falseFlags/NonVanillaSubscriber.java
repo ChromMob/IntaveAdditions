@@ -23,6 +23,7 @@ public class NonVanillaSubscriber implements Subscriber {
         for (ItemStack item : items) {
             if (isOverAllowedLevel(item)) {
                 event.suggestReaction(IntaveViolationEvent.Reaction.IGNORE);
+                return;
             }
         }
     }
