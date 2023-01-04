@@ -1,6 +1,7 @@
 package me.chrommob.intaveadditions.module.falseFlags;
 
 import de.jpx3.intave.access.check.event.IntaveViolationEvent;
+import me.chrommob.intaveadditions.IntaveAdditionsPlugin;
 import me.chrommob.intaveadditions.event.Subscriber;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -12,6 +13,11 @@ import java.util.Set;
 
 public class NonVanillaSubscriber implements Subscriber {
 
+    private final IntaveAdditionsPlugin plugin;
+
+    public NonVanillaSubscriber(IntaveAdditionsPlugin plugin) {
+        this.plugin = plugin;
+    }
 
     @Override
     public void onPhysics(IntaveViolationEvent event) {
@@ -23,6 +29,7 @@ public class NonVanillaSubscriber implements Subscriber {
         for (ItemStack item : items) {
             if (isOverAllowedLevel(item)) {
                 event.suggestReaction(IntaveViolationEvent.Reaction.IGNORE);
+                plugin.getLogger().info("Player " + player.getName() + " has a non-vanilla enchantment on their item. Ignoring violation.");
                 return;
             }
         }
