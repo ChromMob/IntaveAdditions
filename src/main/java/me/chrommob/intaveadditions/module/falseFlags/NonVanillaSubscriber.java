@@ -45,6 +45,9 @@ public class NonVanillaSubscriber implements Subscriber {
         if (itemStack.getType().equals(Material.AIR)) {
             return false;
         }
+        if (!itemStack.getType().toString().contains("trident")) {
+            return false;
+        }
         for (Enchantment enchantment : itemStack.getEnchantments().keySet()) {
             int level = itemStack.getEnchantments().get(enchantment);
             if (level > enchantment.getMaxLevel()) {
