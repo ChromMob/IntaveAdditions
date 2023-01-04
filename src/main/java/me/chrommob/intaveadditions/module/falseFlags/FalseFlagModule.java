@@ -45,7 +45,7 @@ public class FalseFlagModule implements Module {
     public Set<Subscriber> subscriptions() {
         Set<Subscriber> subscribers = new HashSet<>();
         if (falseFlagConfig.notVanillaEnchantments()) {
-            subscribers.add(new NonVanillaSubscriber());
+            subscribers.add(new NonVanillaSubscriber(plugin));
         }
         return subscribers;
     }
